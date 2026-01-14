@@ -1,10 +1,3 @@
-/*
-put sure the buttons appears on the screen 
-and every button is working correctly 
-*/
-
-//console.dir(document); 
-
 
 let display = document.getElementById('screen'); // node object
 
@@ -99,6 +92,14 @@ function calculate () {
     }
     display.textContent = result;
 
+
+    if ((operation == '÷') && secondvalue === 0){
+        display.textContent = 'Cannot divide by zero'; 
+ 
+    }; 
+    
+    waiting2value = true; 
+
 }; 
 
 function special (sign){
@@ -129,7 +130,6 @@ function special (sign){
 
     }
     display.textContent = current; 
-    //console.log('current', current); 
 
 };
 
@@ -141,152 +141,4 @@ function exp(){
  
 }; 
 
-    // if (operation === '+'){
-    //     result = firstvalue + secondvalue; 
-    // }else if (operation === '-'){
-    //     result = firstvalue - secondvalue; 
-    // }else if (operation === 'x'){
-    //     result = firstvalue * secondvalue; 
-    // }else if (operation === '÷'){
-    //     result = firstvalue / secondvalue; 
-    // }
-    // display.textContent = result; 
-    
-
-
-/*
-
-function operation(mathOperand){
-
-    // display.textContent = mathOperand;
-    // if the last character is an operad --> block
-    // let operation = mathOperand; 
-    // console.log('mathOperand', mathOperand); 
-    
-    // let lastPosition = display.textContent.length; 
-    // let operators = ['x','+','-','÷']; 
-    // //console.log(display.textContent[lastPosition-1]);
-
-    // if (operators.includes(display.textContent[lastPosition - 1])) {
-    //     return
-    // }
-
-    // display.textContent += mathOperand;
-    // console.log('mathOperand', mathOperand); 
-
-
-}; 
-
-
-
-function assignment(mathOperand){
-
-    // evaulation 
-    // let current = display.textContent;
-    // console.log(current);
-
-    // let expr = current;
-    // expr = expr.replaceAll("x", "*");
-    // expr = expr.replaceAll("÷", "/");
-    // console.log('expression', expr); 
-
-
-
-    // // //Convert your display string into a format that can be evaluated:
-
-
-    // // // }
-    // let result = eval(expr); 
-    // console.log("result", result); 
-    // display.textContent = result ; 
-}; 
-
-*/ 
-
-// When the user presses =, the calculator should:
-// Read the current display expression
-// Validate it’s evaluatable
-// Compute the result
-// Replace the display with the result
-// Set up the next inputs (continue calculating)
- 
-
-
-
-
-
-
-
-// const allButtons = document.querySelectorAll('.buttons button');
-// const display = document.querySelector('.screen'); 
-// const operation = document.querySelector('.math'); 
-
-
-
-// allButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     display.textContent += button.textContent;
-//     //console.log('dispaly now', display.textContent); 
-//   });
-// });
-
-// const clearButton = document.querySelector('.clear'); 
-
-// // C button - clear the screen 
-
-// clearButton.addEventListener('click', () => {
-//     display.textContent = ''; 
-//     }) ; 
-
-// // operations -- 
-
-// operation.forEach(operand => {
-//     operand.addEventListener('click', () =>{
-//         // addition - if click + --> perform addition calculation  
-        
-
-//     }); 
-
-//     }); 
-
-
-
-
-
-
-
-// const buttons = document.querySelectorAll('.buttons button');
-
-// allButtons.forEach(button => {
-//   button.addEventListener('click', () => {
-//     console.log('Button clicked');
-    //screen.textContent = allButtons.textContent; 
-
-//   });
-// });
-
-
-let kd = 'khadija'; 
-
-let MyFunc = function () {
-    return 'khadija' ; 
-}
-
-let kdha = {
-    name: 'khadija', 
-}
-
-let kdh = MyFunc(); 
-
-let kdhar = kdha.name; 
-
-let Khadija = true; 
-
-function kdja() {
-    return khhar + 'taofeek'
-}
-
-let Jamaica = {
-    name: 'ja'
-}
 
