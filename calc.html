@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <title>Calculator</title>
+        <style>
+            .buttons{
+                display:grid;
+                grid-template-rows:repeat(7,40px);
+                grid-template-columns:repeat(4,40px);
+                gap: 10px;
+                justify-content:center;
+                padding-top: 10px; 
+
+            }
+
+            .buttons button{
+                border-radius:5px; 
+                color: white;
+            
+            }
+            #screen{
+                width: 90%; 
+                height:35px; 
+                background-color:black; 
+                margin:auto; 
+
+                color:lime; 
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+            }
+
+            .span{
+                grid-column:span 2;
+            }
+            
+            .math{
+                background-color:orange;
+            }
+            
+        .container{
+            background-color:rgb(49, 47, 47); 
+            width:210px; 
+            height: 400px; 
+            margin: 25px 50px; 
+            border-radius: 5%;  
+            padding-top:15px; 
+    
+        }
+       
+
+
+        </style>
+
+
+
+
+    </head>
+    
+
+    <body>
+    
+        <div class="container">
+
+        
+        <div id="screen">0</div>
+
+        <div class="buttons"> 
+    
+            <button type="button" onclick="disappear()">C</button>
+            <button type="button" onclick="MSstore()">MS</button>
+            <button type="button" onclick="MR()">MR </button>
+            <button type="button" class="math" onclick="setOperation('÷')">÷</button>
+
+            <button type="button" onclick="append(7)">7</button>
+            <button type="button" onclick="append(8)">8</button>
+            <button type="button" onclick="append(9)">9</button>
+            <button type="button" class="math" onclick="setOperation('x')" >x</button>
+
+            <button type="button" onclick="append(4)">4</button>
+            <button type="button" onclick="append(5)">5</button>
+            <button type="button" onclick="append(6)">6</button>
+            <button type="button" class="math" onclick="setOperation('-')">-</button>
+
+            <button type="button" onclick="append(1)">1</button>
+            <button type="button" onclick="append(2)">2</button>
+            <button type="button" onclick="append(3)">3</button>
+            <button type="button" class="math" onclick="setOperation('+')">+</button>
+
+            <button type="button" class="span" onclick="append(0)">0</button>
+            <button type="button" onclick="decimal()">.</button>
+            <button type="button" class="math" onclick="calculate()">=</button>
+
+            <button type="button" onclick="special('%')">%</button>
+            <button type="button" onclick="special('x²')">x²</button>
+            <button type="button" onclick="special('√')">√</button>
+            <button type="button" onclick="special('1/x')">1/x</button>
+
+            <button type="button" class="span" onclick="exp()">xʸ</button>
+            
+        </div>
+
+
+
+        </div>
+
+    <script src="calc.js"></script> 
+    </body>
+
+
+</html>
