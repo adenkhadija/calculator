@@ -9,7 +9,7 @@ let specialButton = null;
 let base = null; 
 
 function append (value){
-    // click on button , display on screen
+    // click on button , displays on screen
     // concat --> if values = 0 
     // if (display.textContent === '0'){
     //     display.textContent = value; 
@@ -43,23 +43,39 @@ function decimal (){
     
 }; 
 
-function disappear (){
-    display.textContent = "0"; 
+// function disappear (){
+//     display.textContent = "0"; 
+// }; 
+
+const disappear = ()  =>{
+    display.textContent = '0'; 
 }; 
 
-function MSstore (){
-    // storing the privious value 
-    memory = display.textContent
-    console.log(memory)
+// function MSstore (){
+//     // storing the privious value 
+//     memory = display.textContent
+//     console.log(memory)
 
+// }; 
+
+const MSstore = () => {
+    memory = display.textContent; 
 }; 
+
 
 function MR (){
     // received what is saved in MS 
     display.textContent = memory; 
 }; 
 
-function setOperation (operand){
+// function setOperation (operand){
+//     operation = operand; // +
+//     waiting2value = true; 
+//     firstvalue = parseInt(display.textContent); 
+
+// }; 
+
+const setOperation = (operand) => {
     operation = operand; // +
     waiting2value = true; 
     firstvalue = parseInt(display.textContent); 
